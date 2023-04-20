@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>NicMic Games</title>
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/testing.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="../css/pic.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/site.js"></script>
+</head>
+<body>
+    <header class="p-5 bg-dark"></header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="../index.html" class="title">NicMic Games</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+           </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="navigation-item" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navigation-item" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navigation-item" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navigation-item" href="prodandserv.html">Products and Services</a>
+                    </li>
+                    <li class="nav-item cart">
+                        <a href="cart.html"><i class="bi bi-cart text-light"></i></a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+        <!--Product-->
+        <section class="pt-5 mt-5 container">
+            <h2 class="font-weight-bold pt5">Shopping Cart</h2>
+        </section>
+
+        <section id="cart-container" class="container my-5">
+            <table width="100%">
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        
+                    </tr>
+                    <tbody class="cart-items">
+                        <tr class="cart-row">
+                            <td><button class="btn_danger"><i class="bi bi-trash text-dark"></i></button></td>
+                            <td><img src="../images/FirstPersonShooterGame.jpg" alt=""></td>
+                            <td><h5>Video Game</h5></td>
+                            <td><h5 class="cart-price">$44</h5></td>
+                            <td><input type="number" class="w-25 pl-1 cart-quantity" value="1" type="number"></td>
+                            
+                        </tr>
+                        <tr class="cart-row">
+                            <td><button class="btn_danger"><i class="bi bi-trash text-dark"></i></button></td>
+                            <td><img src="../images/PhoneCase.jpg" alt=""></td>
+                            <td><h5>Phone Case</h5></td>
+                            <td><h5 class="cart-price">$24</h5></td>
+                            <td><input type="number" class="w-25 pl-1 cart-quantity" value="1" type="number"></td>
+                            
+                        </tr>
+                        <tr class="cart-row">
+                            <td><button class="btn_danger"><i class="bi bi-trash text-dark"></i></button></td>
+                            <td><img src="../images/gamingchair.jpg" alt=""></td>
+                            <td><h5>Gaming Chair</h5></td>
+                            <td><h5 class="cart-price">$150</h5></td>
+                            <td><input type="number" class="w-25 pl-1 cart-quantity" value="1" type="number"></td>
+                            
+                        </tr>
+                    </tbody>
+                </thead>
+            </table>
+        </section>
+
+        <section class="container" id="cart-bottom">
+            <div class="row">
+                <div class="coupon col-lg-6 col-md-6 col-12 mb-4">
+                    <div>
+                        <h5>Coupons</h5>
+                        <p>Enter your coupon code if you have one.</p>
+                        <input type="text" placeholder="Coupon Code">
+                        <button class="ml-auto text-bg-dark text-light">APPLY Coupon</button>
+                    </div>
+                </div>
+                <div class="total col-lg-6 col-md-6 col-12">
+                    <div class="total-row">
+                        <h5>Cart Total</h5>
+                        <div class="d-flex justify-content-between total-column">
+                            <h6>Subtotal</h6>
+                            <p class="subtotal">$200</p>
+                        </div>
+                        <div class="d-flex justify-content-between total-column">
+                            <h6>Shipping</h6>
+                            <p class="ship">$15</p>
+                        </div>
+                        <hr class="second-hr">
+                        <div class="d-flex justify-content-between">
+                            <h6>Total</h6>
+                            <p class="final">TO BE UPDATED SOON</p>
+                        </div>
+                        <button class="ml-auto text-bg-dark text-light" onclick="location.href='checkout.html'">PROCEED TO CHECKOUT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script src="../js/cart.js"></script>
+        <script type="text/javascript" src="../js/site.js" onload="getCurrentYear()"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+#testing {
+    box-shadow: 10px 10px 10px #000080;
+}
+
+#about img {
+    height: 350px;
+    width: 70%;
+}
+
+footer {
+    text-align: center;
+    align-items:stretch;
+    background-color: black;
+    color: white;
+    bottom: 0;
+}
+
+#quotes {
+   text-align: center;
+}
+
+
+#meme-container {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#container {
+    padding: 50px 50px;
+    margin: 20px;
+}
+
+#meme-container img {
+    width: 350px;
+    height: 450px;
+}
+
+#form {
+    text-align: center;
+    
+}

@@ -1,0 +1,7 @@
+This is a toy store website project created to help Mary sell toys online.
+
+Type of Toys:
+>Pokemon Cards
+
+>Pokemon Toys
+>changing something

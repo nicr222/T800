@@ -1,0 +1,114 @@
+form {
+    max-width: 800px;
+    margin: 20px auto 20px;
+    padding: 20px;
+    border: 1px solid #222339;
+    border-radius: 5px;
+    background-color: #1c1c2a;
+    color: white;
+    box-shadow: 10px 10px 10px black;
+}
+  
+  
+  /* Style the labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Style the text input fields */
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+  }
+  
+  /* Style the select dropdown */
+  select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    background-image: none;
+  }
+  
+  /* Style the checkboxes and radio buttons */
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+    width: 40px;
+
+  }
+  
+
+  /* Style the submit button */
+  input[type="submit"] {
+    background-color: #20a1c1;
+    
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #24a8c6;
+  }
+  
+  /* Style the range slider */
+  input[type="range"] {
+    width: 100%;
+    
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    background-color: #4d70bb;
+  }
+
+  input[type="file"] + label
+  {
+    width: 100%;
+  }
+  
+  /* For Firefox */
+input[type="range"]::-moz-range-thumb {
+    background-color: #4d70bb;
+  }
+  /* Style the file upload input field */
+  input[type="file"] {
+    margin-bottom: 15px;
+  }
+  
+  /* Style the date and time input fields */
+  input[type="date"],
+  input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #fff;
+    background-image: none;
+  }
+  
+  /* Add some styles for when the form elements are focused */
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border-color: #2a2781;
+    outline: none;
+  }
+  
+  /* Add some styles for when the form element is invalid */
+  input:invalid,
+  select:invalid,
+  textarea:invalid {
+    border-color: red;
+  }

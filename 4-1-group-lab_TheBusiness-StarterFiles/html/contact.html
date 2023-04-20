@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>NicMic Games</title>
+    <link type="text/css" rel="stylesheet" href="../css/site.css">
+    <link type="text/css" rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/testing.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/site.js"></script>
+
+</head>
+
+<body>
+    <header class="p-5 bg-dark"></header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="../index.html" class="title">NicMic Games</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="navigation-item" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navigation-item" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navigation-item" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navigation-item" href="prodandserv.html">Products and Services</a>
+                    </li>
+                    <li class="nav-item cart">
+                      <a href="cart.html"><i class="bi bi-cart text-light"></i></a>
+                  </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section class="bg-dark text-light p-5 p-lg-0 text-center text-sm-start">
+      <div class="col-sm">
+        
+            <h1 id="contact">Contact Us</h1>
+            <div id="form-main" class="card bg-light text-dark">
+                    <p>Please leave your information</p>
+                    <div id="form-div">
+                        <form class="form" id="form1">
+
+                            <p class="name">
+                                <input name="name" type="text"
+                                    class="validate[required,custom[onlyLetter],length[0,100]] feedback-input"
+                                    placeholder="Name" id="name" />
+                            </p>
+
+                            <p class="email">
+                                <input name="email" type="text" class="validate[required,custom[email]] feedback-input"
+                                    id="email" placeholder="Email" />
+                            </p>
+
+                            <p class="text">
+                                <textarea name="text" class="validate[required,length[6,300]] feedback-input"
+                                    id="comment" placeholder="Comment"></textarea>
+                            </p>
+
+
+                            <div class="submit">
+                                <input type="submit" value="SEND" id="button-blue" />
+                                <div class="ease"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+    </section>
+
+    <!--FAQ-->
+    <section id="questions" class="p-5">
+        <div class="p-5 container">
+            <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+            <div class="accordion accordion-flush" id="questions">
+                <!--Question 1-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question__1">
+                      What devices and platforms are supported?
+                    </button>
+                  </h2>
+                  <div id="question__1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                    <div class="accordion-body">Our website supports a variety of platforms and devices, including PC, Mac, Xbox, PlayStation, and mobile devices. System requirements for playing games vary depending on the game and platform.</div>
+                  </div>
+                </div>
+                <!--Question 2-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question__2">
+                      Do you offer any promotions, discounts, or free games on your website?
+                    </button>
+                  </h2>
+                  <div id="question__2" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#questions">
+                    <div class="accordion-body">Yes, we often offer promotions, discounts, and free games on our website. Be sure to check our website regularly for the latest offers.</div>
+                  </div>
+                </div>
+                <!--Question 3-->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question__3">
+                      Can I write reviews or submit content to your website, and how can I do so?
+                    </button>
+                  </h2>
+                  <div id="question__3" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#questions">
+                    <div class="accordion-body">Yes, we welcome user-generated content and encourage users to submit reviews, articles, and other content. To do so, fill in the form on top of page. Feel free to use any of the information on our <a href="../html/about.html">About Us</a> page to reach out to us in anyway.</div>
+                  </div>
+                </div>
+                <!--Question 4-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question__4">
+                        What is your website's privacy policy?
+                      </button>
+                    </h2>
+                    <div id="question__4" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                      <div class="accordion-body">Our website has a privacy policy that outlines how we collect, use, and protect the personal information of our users. We take data privacy and security seriously and have measures in place to protect user information.</div>
+                    </div>
+                  </div>
+                  <!--Question 5-->
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question__5">
+                        How do I purchase games or other content and what payment options are available?
+                      </button>
+                    </h2>
+                    <div id="question__5" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#questions">
+                      <div class="accordion-body">To purchase games or other content on our website, simply select the game or content you want to buy and follow the instructions provided. We accept a variety of payment options, including credit cards, PayPal, and other digital payment methods.</div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </section>
+    <br>
+    
+    <div id="form">
+      <h3>Please help us continue bringing you what you love</h3>
+      <a href="../html/FavoriteGame.html">Please fill out this survey.</a>
+    </div>
+    <br>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+
+<script type="text/javascript" src="../js/site.js" onload="getCurrentYear()"></script>
+</html>

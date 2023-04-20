@@ -1,0 +1,308 @@
+
+/*Main Body CSS*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)50%), url(../images/1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat;
+    height: 109vh;
+}
+
+/* Navigation Bar CSS*/
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.logo {
+    color: #FFCC00;
+    font-size: 31px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 20px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu {
+    width: 400px;
+    float: left;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 18px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transform: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #FFCC00;
+}
+
+.icon__cart {
+    display: flex;
+    font-size: 1.8rem;
+    cursor: pointer;
+    float: right;
+    margin-top: 1.5rem;
+    color: white;
+}
+
+
+/*cart*/
+.cart {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 360px;
+    min-height: 100vh;
+    padding: 20px;
+    background: #FFFF;
+    box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+    transition: .3s;
+    color: #0A285F;
+}
+
+.cart.active {
+    right: 0;
+
+}
+
+.cart__title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.cart__box {
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart__img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail__box {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart__product__title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.cart__price {
+    font-weight: 500;
+}
+
+.cart__quantity {
+    border: 1px solid #0A285F;
+    outline-color: #FFCC00;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.trash btn__dng{
+    background-color: #0A285F;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid #0A285F;
+}
+
+.total__title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.total__price {
+    margin: 0.5rem;
+}
+
+.btn__buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    border: none;
+    background: #0A285F;
+    color: #FFCC00;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.btn__buy:hover {
+    background: #FFCC00;
+    color: #0A285F;
+}
+
+#close__cart {
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    background-color: #0A285F;
+    cursor: pointer;
+}
+
+
+/*Main Content*/
+.content {
+    background-color: #ffff;
+    width: auto;
+    max-width: 1300px;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    
+}
+
+
+.main__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+
+}
+
+.main__container h1 {
+    font-size: 4rem;
+    color: #0A285F;
+    text-align: center;
+}
+
+.main__container h2
+{
+    font-size: 3rem;
+    color: #0A285F;
+    text-align: center;
+}
+
+.main__container p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: #CE2211;
+}
+
+#main__img {
+    height: 80%;
+    width: 80%;
+}
+
+.owners {
+    background-color: #ffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    max-width: 1200px;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.owners h1{
+    color: #0A285F;
+    font-size: 2.5rem;
+    margin-bottom: 4.5rem;
+}
+
+.owners__container {
+    display: flex;
+    justify-content: center;
+}
+
+.owners__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url("../images/trainermale.jpg");
+    background-size: cover;
+    position: relative;
+    color: #131313;
+}
+.owners__card:nth-child(2) {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(17, 17, 17, 0.6) 100%), url("../images/PsyduckTrainer.jpg");
+}
+
+.owners h2{
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.owners__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+    color: #ffff;
+}
+
+.footer {
+    position: relative;
+    background-color: #FFCC00;
+    color: #FFCC00;
+    width: auto;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+}
+.footer__content {
+    position: absolute;
+
+
+}

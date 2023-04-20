@@ -1,0 +1,19 @@
+div #form-main {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    box-shadow: 10px 10px 10px #000080;
+    
+}
+
+#form-div {
+    text-align: center;
+    
+}
+
+h1#contact {
+    text-align: center;
+}
+ #form-main p {
+    text-align: center;
+ }

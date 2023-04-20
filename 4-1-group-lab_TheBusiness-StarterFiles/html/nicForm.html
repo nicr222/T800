@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>NicMic Games</title>
+    <link type="text/css" rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/testing.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/site.js"></script>
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"
+        rel="stylesheet">
+
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js">
+        </script>
+</head>
+
+<body>
+    <header class="p-5 bg-dark"></header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="../index.html" class="title">NicMic Games</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="navigation-item" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navigation-item" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navigation-item" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navigation-item" href="prodandserv.html">Products and Services</a>
+                    </li>
+                    <li class="nav-item cart">
+                        <a href="cart.html"><i class="bi bi-cart text-light"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <section class="bg-dark text-light p-5 p-lg-0 text-center text-sm-start">
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div class="p-3 info">
+                    <h1>Quotes</h1>
+                    <p class="lead">
+                        File out this short form so we can begin looking into how much it will cost to get your game
+                        created!
+                    </p>
+                    <p>
+                        The more you fill out the better our quote will be. While there are a few sections we require,
+                        some things can go
+                        unfilled. Pricing is due to change after you and our team finalize all the details.
+                    </p>
+                </div>
+                <img class="img-fluid w-50 p-4 d-none d-sm-block" src="#" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="p-5">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <form>
+                    <div class="p-4 form-group">
+                        <label for="exampleFormControlInput1">Email address</label>
+                        <input type="email" class="email" placeholder="name@emailhere.com" required>
+                    </div>
+                    <div class="p-4 form-group">
+                        <label for="size">Please select style of game!</label>
+                        <select class="game" required>
+                            <option>Open World</option>
+                            <option>Rogue</option>
+                            <option>FPS Shooter</option>
+                            <option>MMO</option>
+                            <option>Pokemon</option>
+                        </select>
+                    </div>
+                    <div class="p-4 form-check form-check-inline check">
+                        <input class="form-check-input" type="checkbox" value="urgent" required>
+                        <label class="form-check-label" for="inlineCheckbox2">Urgent</label>
+                    </div>
+                    <div class="p-4 form-check form-check-inline">
+                        <input class="form-check-input check" type="checkbox">
+                        <label class="form-check-label">Not Urgent</label>
+                    </div>
+
+                    <div class="p-4 form-group">
+                        <label for="exampleFormControlTextarea1">Information that is needed for this quote. Sizing,
+                            Style, Needs, Wants. All will help to get you the closest price:</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                    <div class="p-4 form-group">
+                        <label for="exampleFormControlFile1">Files that will help with quote:</label>
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                    <div class="p-4 time-date">
+                        <label for="meeting-time">When is this needed by:</label>
+
+                        <input type="datetime-local" id="meeting-time" name="meeting-time" value="2023-06-12T19:30"
+                            min="2018-06-07T00:00" max="2026-06-14T00:00" required>
+
+                    </div>
+                    <div class="p-4 team">
+                        <label for="team">Please choose dev team:</label>
+                        <div class="who">
+                            <div class="nic">
+                                <input type="radio" name="advanced" id="advanced" required>
+                                <label for="nic">Advanced team. (Nicolas and Michaela will head this project. This will
+                                    add to the total price)</label><br></br>
+                                    <input type="radio" name="basic" id="basic">
+                            <label for="nic">Basic team.</label>
+                            </div>
+                            <div class="basic"></div>
+                            
+                        </div>
+
+                    </div>
+
+                    <div class="p-4 sliders">
+                        <label for="sliders">Quality:</label>
+
+                        <div>
+                            <input type="range" id="graphics" name="graphics" min="0" max="11">
+                            <label for="volume">Graphics</label>
+                        </div>
+
+                        <div>
+                            <input type="range" id="gameplay" name="gamplay" min="0" max="100" value="90" step="10">
+                            <label for="cowbell">Gameplay</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-dark mt-3">Submit</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+
+</body>
+<script type="text/javascript" src="../js/site.js" onload="getCurrentYear()"></script>
+
+</html>

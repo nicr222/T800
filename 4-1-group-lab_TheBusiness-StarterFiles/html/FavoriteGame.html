@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite Game Form</title>
+    <link rel="stylesheet" href="../css/site.css">
+    <link rel="stylesheet" href="../css/testing.css">
+    <link rel="stylesheet" href="../css/gameForm.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/site.js"></script>
+</head>
+<body>
+    <header class="p-5 bg-dark"></header>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top">
+        <div class="container">
+            <a href="../index.html" class="title">NicMic Games</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="navigation-item" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navigation-item" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navigation-item" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="navigation-item" href="prodandserv.html">Products and Services</a>
+                    </li>
+                    <li class="nav-item cart">
+                        <a href="cart.html"><i class="bi bi-cart text-light"></i></a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <form action="submit.php" method="POST">
+        <div id="gameform">
+
+        <h1>Tell us about your Favorite Game</h1>
+        <label for="game-title">Game Title:</label>
+        <input type="text" id="game-title" name="game-title" required>
+      <br>
+        <label for="game-description">Game Description:</label>
+        <textarea id="game-description" name="game-description"></textarea>
+      <br>
+        <label for="game-genre">Game Genre:</label>
+        <br>
+        <select id="game-genre" name="game-genre">
+          <option value="">Select a genre</option>
+          <option value="action">Action</option>
+          <option value="adventure">Adventure</option>
+          <option value="puzzle">Puzzle</option>
+          <option value="rpg">Role-playing</option>
+        </select>
+      <br>
+        <label for="game-platforms">Game Platforms:</label>
+        <br>
+        <input type="checkbox" id="game-platforms-pc" name="game-platforms[]" value="pc">
+        <label for="game-platforms-pc">PC</label>
+        <input type="checkbox" id="game-platforms-xbox" name="game-platforms[]" value="xbox">
+        <label for="game-platforms-xbox">Xbox</label>
+        <input type="checkbox" id="game-platforms-playstation" name="game-platforms[]" value="playstation">
+        <label for="game-platforms-playstation">PlayStation</label>
+      <br>
+        <label>Game Rating:</label>
+        <br>
+        <input type="radio" id="game-rating-1" name="game-rating" value="1">
+        <label for="game-rating-1">Everyone</label>
+        <input type="radio" id="game-rating-2" name="game-rating" value="2">
+        <label for="game-rating-2">Teen</label>
+        <input type="radio" id="game-rating-3" name="game-rating" value="3">
+        <label for="game-rating-3">Mature</label>
+      <br>
+        <label for="game-file">Game Screenshot:</label>
+        <input type="file" id="game-file" name="game-file">
+      <br>
+        <label for="game-release-date">Game Release Date:</label>
+        <input type="date" id="game-release-date" name="game-release-date">
+      <br>
+        <label for="game-release-time">Game Release Time:</label>
+        <input type="time" id="game-release-time" name="game-release-time">
+      <br>
+        <label for="game-difficulty">Game Difficulty:</label>
+        <input type="range" id="game-difficulty" name="game-difficulty" min="1" max="10">
+      <br>
+        <input type="submit" value="Submit">
+        </div>
+      </form>
+    
+    <script type="text/javascript" src="../js/site.js" onload="getCurrentYear()"></script>
+</body>
+</html>
