@@ -13,48 +13,47 @@
 
 </head>
 <body>
-     <!--NavBar-->
- <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Either image or name</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">Either image or name</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
 
-                <li class="nav-item">
-                    <a class="nav-link" href="../index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../html/aboutus.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="html/mainGames.html">Games</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../html/contact.html">Contact</a>
-                </li>
-
-
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="aboutUs.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="mainGames.html">Games</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
             </ul>
             <a href="#sighup" class="btn btn-brand ms-lg-3">Sign Up</a>
             <a href="#login" class="btn btn-brand">Log In</a>
+          </div>
         </div>
+      </nav>
+
+      <div class="formcontainer">
+        <form>
+            <h3>Contact Us</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="example@gmail.com" required>
+            <input type="text" id="phone" placeholder="(888)888-8888" required>
+            <textarea id="message" rows="4" placeholder="Comments or Concerns"></textarea>
+            <button type="submit">Send</button>
+        </form>
     </div>
-</nav>
-<div class="formcontainer">
-    <form>
-        <h3>Contact Us</h3>
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="example@gmail.com" required>
-        <input type="text" id="phone" placeholder="(888)888-8888" required>
-        <textarea id="message" rows="4" placeholder="Comments or Concerns"></textarea>
-        <button type="submit">Send</button>
-    </form>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
