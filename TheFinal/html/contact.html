@@ -55,6 +55,50 @@
         </form>
     </div>
 
+
+        <!--Contact & Map-->
+        <section class="p-5">
+          <div class="container">
+              <div class="row g-4">
+                  <div class="col-md">
+                      <h2 class="text-center mb-4">Contact Info</h2>
+                      <ul class="list-group list-group-flush lead">
+                          <li class="list-group-item">
+                              <span class="fw-bold">Main Location:</span><a href="https://www.google.com/maps/place/123+Main+St,+Stevens+Point,+WI+54481/@44.5229756,-89.5441062,17z/data=!3m1!4b1!4m5!3m4!1s0x88005070e04a413b:0x5266eed111f91345!8m2!3d44.5229756!4d-89.5441062"> 123 Main St, Stevens Point, WI</a>
+                          </li>
+                          <li class="list-group-item">
+                              <span class="fw-bold">Phone</span><a href="tel:+7155552312"> (715) 555-2312</a></a>
+                          </li>
+                          <li class="list-group-item">
+                              <span class="fw-bold">Email</span> <a href="mailto:info@NicMicGames.com">info@NicMicGames.com</a>
+                          </li>
+                      </ul>
+                  </div>
+                  <div class="col-md">
+                      <div id="map"></div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      <section class="bg-white">
+          <div class="container">
+              
+          </div>
+      </section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+          crossorigin="anonymous"></script>
+      <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+  
+      <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoibmljZXIyMjIiLCJhIjoiY2xmcjZmOWR1MDJlejN6bWhtOWJ1azh3dyJ9.gyCqRO9zr1LlgyjltSZwfQ';
+          var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/mapbox/streets-v11',
+              center: [-89.574814, 44.523483],
+              zoom: 10,
+          });
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
