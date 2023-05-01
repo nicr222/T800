@@ -1,0 +1,46 @@
+  
+  .containerGame {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #e78af7; */
+  }
+  
+  #gameBoard {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px;
+  }
+  
+  .box {
+    height: 150px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150px;
+    color: #aa77ff;;
+  }
+  
+  .box:hover {
+    cursor: pointer;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #aa77ff;;
+    color: white;
+    border-color: #aa77ff;;
+    font-size: 18px;
+    transition: 200ms transform;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+  
