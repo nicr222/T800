@@ -168,6 +168,36 @@ img {
     bottom: 24px;
 }
 
+/* Forms */
+
+.contact {
+    position: relative;
+    z-index: 2;
+}
+
+.contact::after {
+    content: "";
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(rgba(170, 119, 255,0.5), rgba(170, 119, 255,0.4)), url(../images/background.jpg);
+    background-position: center;
+    background-size: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.contact .form-control {
+    border-radius: 0;
+
+}
+
+.contact .form-control:focus {
+    box-shadow: none;
+    border-color: var(--c-brand);
+}
+
 /* Footer */
 footer {
     padding-top: 100px;
