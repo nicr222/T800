@@ -41,31 +41,40 @@
   </nav>
 
   <!--Game-->
-  <div class="GameContainer">
-    <h1>Math Game</h1>
-    <div class="operation-container">
-      <label for="operation">Select an operation:</label>
-      <select id="operation">
-        <option value="addition">Addition</option>
-        <option value="subtraction">Subtraction</option>
-        <option value="multiplication">Multiplication</option>
-        <option value="division">Division</option>
-      </select>
+  <div class="main-ui">
+    <p class="problem"></p>
+  
+    <form action="" class="our-form">
+      <input type="text" class="our-field" autocomplete="off">
+      <button>Submit</button>
+    </form>
+  
+    <p class="status">You need <span class="points-needed">10</span> more points, and are allowed to make <span class="mistakes-allowed">2</span> more mistakes.</p>
+  
+    <div class="progress">
+      <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
+      <div class="progress-inner"></div>
     </div>
-    <div class="problem-container" hidden>
-      <p id="problem"></p>
-    </div>
-    <div class="input-container" hidden>
-      <input type="text" id="answer" placeholder="Enter your answer here">
-      <button onclick="checkAnswer()">Submit</button>
-    </div>
-    <div class="info-container hidden">
-      <p>Score: <span id="score">0</span></p>
-      <p>Round: <span id="round">1</span></p>
-    </div>
+  
   </div>
   
-</div>
+  <div class="overlay">
+    <div class="overlay-inner">
+      <p class="end-message"></p>
+      <button class="reset-button">Start Over</button>
+    </div>
+  </div>
     <!-- Footer -->
     <footer>
         <div class="bg-dark">
