@@ -1,0 +1,22 @@
+const paragraphs = [
+    "The sun was setting on the horizon, casting a warm glow across the vast expanse of the desert. The sand stretched out as far as the eye could see, broken only by the occasional rock or cactus. A solitary figure could be seen in the distance, walking slowly towards the edge of the desert.",
+    "As the figure approached, it became clear that it was a traveler, carrying a backpack and wearing a wide-brimmed hat to protect from the sun. They looked tired and weary, but determined to reach their destination. Their journey had been long and difficult, but they knew that they were close.",
+    "Finally, after what seemed like hours of walking, the traveler reached the edge of the desert and saw the shimmering lights of a city in the distance. A smile crossed their face as they quickened their pace, eager to reach their destination and rest their tired feet.",
+    "Reading is an activity that provides countless benefits for people of all ages. It can improve cognitive function, enhance creativity, and reduce stress and anxiety.",
+    "For children, reading is especially important because it helps to develop important language and communication skills that will serve them well throughout their lives.",
+    "Studies have shown that children who read regularly have larger vocabularies and higher levels of comprehension than those who do not.",
+    "Reading also helps to develop imagination and creativity, as children are exposed to new ideas, perspectives, and worlds through the books they read.",
+    "For adults, reading is an excellent way to relax and unwind after a long day at work. It can help to reduce stress and anxiety, as well as improve overall mental health.",
+    "Reading has also been shown to improve memory and cognitive function in adults, as it requires the brain to process and retain information.",
+    "In addition to these cognitive benefits, reading can also be a form of entertainment, providing hours of enjoyment and escape from the stresses of everyday life.",
+    "Reading can also provide a sense of community and connection, as people often come together to discuss and share their favorite books and authors.",
+    "Another benefit of reading is that it can improve empathy and emotional intelligence, as readers are exposed to different perspectives and experiences that help them to better understand the world and the people in it.",
+    "Research has also shown that reading can improve sleep quality, as it helps to relax the mind and reduce stress levels.",
+    "Reading can also be a form of self-improvement, as it exposes readers to new ideas and knowledge that they may not have encountered otherwise.",
+    "In today's digital age, reading can also help to reduce screen time and promote healthy habits, as it provides an alternative form of entertainment that does not involve staring at a screen.",
+    "Reading can also be a great way to explore new topics and interests, as there are books on virtually every subject imaginable.",
+    "For students, reading is essential for academic success, as it helps to develop critical thinking and analytical skills that are crucial for success in college and beyond.",
+    "Reading can also help to improve writing skills, as it exposes students to different styles and techniques that they can incorporate into their own writing.",
+    "Finally, reading can be a lifelong hobby that provides a constant source of joy and intellectual stimulation, as there is always something new to discover and explore in the world of literature.",
+    "In summary, reading is a beneficial and enjoyable activity that can provide a wide range of benefits for people of all ages, from improving cognitive function and reducing stress to promoting empathy and emotional intelligence."
+];
