@@ -198,6 +198,26 @@ img {
     border-color: var(--c-brand);
 }
 
+/* Games */
+.game-item .iconbox{
+    background-color: var(--c-brand);
+    color:white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.game-item i {
+    color: white;
+}
+
+.game-item:hover .iconbox {
+    opacity: 1;
+    top: 50%;
+
+}
+
 /* Footer */
 footer {
     padding-top: 100px;
