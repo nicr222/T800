@@ -15,7 +15,8 @@
 <body>
     
       <!--NavBar-->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white sticky-top">
+      <!--NavBar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">Clever Kids Club</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -44,16 +45,40 @@
         </div>
     </nav>
 
-      <div class="formcontainer">
-        <form>
-            <h3>Contact Us</h3>
-            <input type="text" id="name" placeholder="Your Name" required>
-            <input type="email" id="email" placeholder="example@gmail.com" required>
-            <input type="text" id="phone" placeholder="(888)888-8888" required>
-            <textarea id="message" rows="4" placeholder="Comments or Concerns"></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </div>
+    <!-- Form -->
+    <section class="section-padding contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title text-center">
+                        <h1 class="display-4 text-white fw-semibold">Contact Us</h1>
+                        <div class="line bg-white"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <form action="#" class="row g-3 p-lg-5 p-4 bg-white theme-shadow">
+                        <div class="form-group col-lg-12">
+                            <input type="text" class="form-control" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="email" class="form-control" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <input type="text" class="form-control" placeholder="Enter Phone Number">
+                        </div>
+                        <textarea id="message" rows="4" placeholder="Comments or Concerns"></textarea>
+                        <div class="form-group col-lg-12">
+                            <button class="btn btn-brand">Send</button>
+                            <button class="btn btn-brand">Cancel</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
         <!--Contact & Map-->
