@@ -53,10 +53,10 @@ function shuffleCard(){
     disableDeck = false;
     let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
     arr.sort(() => Math.random() > 0.5 ? 1 : -1);
-    cards.forEach((card, i) => {
+    cards.forEach((card, index) => {
         card.classList.remove("flip");
         let imgTag = card.querySelector("img");
-        imgTag.src = `../memory/img-${arr[i]}.png`;
+        imgTag.src = `../memory/img-${arr[index]}.png`;
         card.addEventListener("click", flipCard);
     });
 }
@@ -64,6 +64,6 @@ function shuffleCard(){
 shuffleCard();
 
 cards.forEach(card => {// adding click event to all cards
-
+    card.classList.add("flip");
     card.addEventListener("click", flipCard);
 })
