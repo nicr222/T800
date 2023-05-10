@@ -67,6 +67,11 @@ img {
     
 }
 
+.pop {
+    height: 200px;
+    width: 200px;
+}
+
 .image-zoom:hover .image-zoom-wrapper img {
     transform: scale(1.1);
 }
@@ -83,6 +88,11 @@ img {
 
 .navbar-nav .nav-link.active {
     color: var(--c-brand);
+}
+
+.navbar-brand {
+    height: 15%;
+    width: 10%;
 }
 
 /* BTN */

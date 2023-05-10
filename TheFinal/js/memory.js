@@ -23,11 +23,7 @@ function flipCard(e) {
 function matchedCards(img1, img2) {
     if(img1 === img2){ 
         matchedCard++;
-        if(matchedCard == 8){
-            setTimeout(() => {
-                return shuffleCard();
-            }, 1000);
-        }
+        
         cardOne.removeEventListener("click", flipCard);
         cardTwo.removeEventListener("click", flipCard);
         cardOne = cardTwo = "";
@@ -61,9 +57,9 @@ function shuffleCard(){
     });
 }
 
-shuffleCard();
+//shuffleCard();
 
 cards.forEach(card => {// adding click event to all cards
-    card.classList.add("flip");
+    
     card.addEventListener("click", flipCard);
 })
