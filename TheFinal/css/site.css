@@ -62,6 +62,11 @@ img {
     transition: var(--transition);
 }
 
+.pep {
+    height: 450px;
+    
+}
+
 .image-zoom:hover .image-zoom-wrapper img {
     transform: scale(1.1);
 }
